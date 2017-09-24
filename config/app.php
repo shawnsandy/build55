@@ -148,6 +148,7 @@ return [
          * Package Service Providers...
          */
         ShawnSandy\Extras\ExtrasServicesProvider::class,
+        ShawnSandy\Orangebox\OrangeboxThemesProvider::class,
         /*
          * Application Service Providers...
          */
