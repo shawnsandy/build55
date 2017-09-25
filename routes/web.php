@@ -28,3 +28,8 @@ Route::group(["prefix" => "page"], function () {
 	Pages::routes();
 }
 );
+
+Route::group(["prefix" => "orangebox"], function () {
+	Orangebox::routes();
+}
+);

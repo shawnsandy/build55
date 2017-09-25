@@ -205,7 +205,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Extras' => ShawnSandy\Extras\ExtrasFacade::class,
-        "Gmap" => ShawnSandy\Extras\Apps\Maps\MapsFacade::class
+        "Gmap" => ShawnSandy\Extras\Apps\Maps\MapsFacade::class,
+        "Orangebox" => ShawnSandy\Orangebox\OrangeboxFacade::class
 
 ],
 
