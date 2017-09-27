@@ -3,8 +3,9 @@
 
 
 
+
 /*
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -16,20 +17,17 @@
 
 Route::get('/', function () {
 	return view('pagekit::welcome');
-}
-);
+});
 
 Route::group(['prefix' => "extras"], function () {
 	Extras::routes();
-}
-);
+});
 
 Route::group(["prefix" => "page"], function () {
 	Pages::routes();
-}
-);
+});
 
 Route::group(["prefix" => "orangebox"], function () {
 	Orangebox::routes();
-}
-);
+	Route::view("theme-setup/", "orangebox::pages.theme-install");
+});
