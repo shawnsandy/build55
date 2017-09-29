@@ -149,6 +149,8 @@ return [
          */
         ShawnSandy\Extras\ExtrasServicesProvider::class,
         ShawnSandy\Orangebox\OrangeboxThemesProvider::class,
+        ShawnSandy\Jarvis\JarvisThemesProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -206,7 +208,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Extras' => ShawnSandy\Extras\ExtrasFacade::class,
         "Gmap" => ShawnSandy\Extras\Apps\Maps\MapsFacade::class,
-        "Orangebox" => ShawnSandy\Orangebox\OrangeboxFacade::class
+        "Orangebox" => ShawnSandy\Orangebox\OrangeboxFacade::class,
+        "Jarvis" => ShawnSandy\Jarvis\JarvisFacade::class,
 
 ],
 

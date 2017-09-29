@@ -48,6 +48,7 @@
         "psr-4": {
             "App\\": "app/",
             "ShawnSandy\\Extras\\": "components/extras/src/",
+            "ShawnSandy\\Jarvis\\": "components/jarvis/src/",
             "ShawnSandy\\Orangebox\\": "components/orange-box/src/"
         }
     },
