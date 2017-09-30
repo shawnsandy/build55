@@ -18,7 +18,7 @@
 */
 
 Route::get('/', function () {
-	return view('pagekit::welcome');
+	return view('jarvis::index');
 }
 );
 
