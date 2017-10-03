@@ -1,13 +1,7 @@
 <?php
 
-
-
-
-
-
-
 /*
----------------------------------------------------------------------
+-------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -18,7 +12,7 @@
 */
 
 Route::get('/', function () {
-	return view('jarvis::index');
+	return view('jarvis::index', ["theme_class" => "front-page"]);
 }
 );
 
@@ -42,6 +36,20 @@ Route::group(["prefix" => "orangebox"], function () {
 
 Route::group(['prefix' => 'jarvis'], function() {
 	Jarvis::routes();
+
+/**
+ * Sets the theme install routes
+ * Not set in the routes files
+ *
+ */
+
+Route::view("install", "jarvis::install.index");
+
 }
 );
+
+
+
+
+
 
