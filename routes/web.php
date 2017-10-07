@@ -1,7 +1,8 @@
 <?php
 
+
 /*
--------------------------------------------------------------------
+------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -37,16 +38,21 @@ Route::group(["prefix" => "orangebox"], function () {
 Route::group(['prefix' => 'jarvis'], function() {
 	Jarvis::routes();
 
-/**
- * Sets the theme install routes
- * Not set in the routes files
- *
- */
 
-Route::view("install", "jarvis::install.index");
+	/**
+	* Sets the theme install routes
+	 * Not set in the routes files
+	 *
+	 */
+
+
 
 }
 );
+
+Route::group(["prefix" => 'reveal-ui'], function() {
+	Route::view("/themes", "jarvis::install.index");
+});
 
 
 
