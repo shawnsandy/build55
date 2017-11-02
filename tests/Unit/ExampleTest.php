@@ -16,4 +16,22 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function checkIfFlagIsCorrectValue() {
+
+        $val = 1;
+        $val2 = "1";
+
+        $answer = ($val === $val2);
+
+        $this->assertTrue($answer);
+
+    }
+
 }

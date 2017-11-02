@@ -17,6 +17,7 @@
         "illuminate/contracts": "^5.5",
         "illuminate/http": "^5.5",
         "illuminate/support": "^5.5",
+        "itsgoingd/clockwork": "^2.0",
         "laracasts/flash": "^3.0",
         "laracasts/generators": "^1.1",
         "laracasts/utilities": "^3.0",
@@ -30,6 +31,7 @@
         "plank/laravel-mediable": "^2.5",
         "rap2hpoutre/laravel-log-viewer": "^0.10.4",
         "shawnsandy/pagekit": "dev-master",
+        "silber/bouncer": "v1.0.0-beta.4",
         "spatie/laravel-collection-macros": "^3.0",
         "thujohn/twitter": "^2.2",
         "zondicons/blade-bridge": "^0.1.3"
@@ -49,6 +51,7 @@
             "App\\": "app/",
             "ShawnSandy\\Extras\\": "components/extras/src/",
             "ShawnSandy\\Jarvis\\": "components/jarvis/src/",
+            "ShawnSandy\\DashAuth\\": "components/dash-auth/src/",
             "ShawnSandy\\Orangebox\\": "components/orange-box/src/"
         }
     },

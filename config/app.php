@@ -150,6 +150,7 @@ return [
         ShawnSandy\Extras\ExtrasServicesProvider::class,
         ShawnSandy\Orangebox\OrangeboxThemesProvider::class,
         ShawnSandy\Jarvis\JarvisThemesProvider::class,
+        ShawnSandy\DashAuth\DashAuthServicesProvider::class,
 
         /*
          * Application Service Providers...
@@ -210,7 +211,32 @@ return [
         "Gmap" => ShawnSandy\Extras\Apps\Maps\MapsFacade::class,
         "Orangebox" => ShawnSandy\Orangebox\OrangeboxFacade::class,
         "Jarvis" => ShawnSandy\Jarvis\JarvisFacade::class,
+        "Dashauth" => ShawnSandy\DashAuth\DashAuthFacade::class,
 
 ],
 
+'debug_blacklist' => [
+        '_ENV' => [
+            'APP_KEY',
+            'DB_PASSWORD',
+            'DB_DATABASE',
+            'REDIS_PASSWORD',
+            'MAIL_PASSWORD',
+            'PUSHER_APP_KEY',
+            'PUSHER_APP_SECRET',
+        ],
+        '_SERVER' => [
+            'APP_KEY',
+            'DB_PASSWORD',
+            'DB_USERNAME',
+            'DB_DATABASE',
+            'REDIS_PASSWORD',
+            'MAIL_PASSWORD',
+            'PUSHER_APP_KEY',
+            'PUSHER_APP_SECRET',
+        ],
+        '_POST' => [
+            'password',
+        ],
+    ],
 ];

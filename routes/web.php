@@ -1,8 +1,9 @@
 <?php
 
 
+
 /*
-------------------------------------------------------------------
+-----------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
@@ -13,7 +14,8 @@
 */
 
 Route::get('/', function () {
-	return view('jarvis::index', ["theme_class" => "front-page"]);
+	 //dd(jarvis_views("index", "shawnsandy"));
+	return view(jarvis_views("index"), ["theme_class" => "front-page"]);
 }
 );
 
@@ -27,35 +29,35 @@ Route::group(["prefix" => "page"], function () {
 }
 );
 
-Route::group(["prefix" => "orangebox"], function () {
-	Orangebox::routes();
-	Route::view("theme-setup/", "orangebox::pages.theme-install");
-}
-);
 
+Route::group(['prefix' => config("jarvis.base_url")], function() {
 
+	Jarvis::install_routes();
 
-Route::group(['prefix' => 'jarvis'], function() {
+	Jarvis::generator_routes();
+
 	Jarvis::routes();
-
-
-	/**
-	* Sets the theme install routes
-	 * Not set in the routes files
-	 *
-	 */
-
-
-
-}
-);
+});
 
 Route::group(["prefix" => 'reveal-ui'], function() {
 	Route::view("/themes", "jarvis::install.index");
 });
 
+Route::get("test", function()
+{
+    config(["jarvis.view" => "jarvisThemes"]);
+
+    dump(jarvis_views("test", true));
+
+    return view(jarvis_views("test.index"));
+});
+// Route::post("installs","\ShawnSandy\Jarvis\Controllers\InstallsController" );
 
 
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 
+Dashauth::routes();
