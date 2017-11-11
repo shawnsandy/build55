@@ -58,7 +58,7 @@
             "ShawnSandy\\Jarvis\\": "components/jarvis/src/",
             "ShawnSandy\\DashAuth\\": "components/dash-auth/src/",
             "ShawnSandy\\Orangebox\\": "components/orange-box/src/",
-            "ShawnSandy\\Syntaxcards\\": "components/shawnsandy/syntaxcards/src"
+            "ShawnSandy\\Syntaxcards\\": "components/applications/syntaxcards/src"
         }
     },
     "autoload-dev": {
