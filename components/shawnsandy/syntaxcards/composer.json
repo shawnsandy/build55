@@ -1,0 +1,27 @@
+{
+    "name": "shawnsandy/syntaxcards",
+    "description": "Syntax Cards",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.*"
+    },
+    "author": {
+        "name": "shawn sandy ",
+        "email": "shawnsandy04@gmail.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShawnSandy\\Syntaxcards\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ShawnSandy\\Syntaxcards\\SyntaxcardsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}

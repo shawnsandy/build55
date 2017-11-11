@@ -1,16 +1,21 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=7.0.0",
         "abraham/twitteroauth": "^0.7.4",
+        "ajthinking/tinx": "^0.8.4",
         "albertcht/invisible-recaptcha": "^1.7",
         "barryvdh/laravel-debugbar": "^3.0",
         "barryvdh/laravel-ide-helper": "^2.4",
         "brotzka/laravel-dotenv-editor": "^2.0",
+        "consoletvs/bootpack": "^1.1",
         "doctrine/dbal": "^2.6",
         "fideloper/proxy": "~3.3",
         "greggilbert/recaptcha": "^2.2",
@@ -52,7 +57,8 @@
             "ShawnSandy\\Extras\\": "components/extras/src/",
             "ShawnSandy\\Jarvis\\": "components/jarvis/src/",
             "ShawnSandy\\DashAuth\\": "components/dash-auth/src/",
-            "ShawnSandy\\Orangebox\\": "components/orange-box/src/"
+            "ShawnSandy\\Orangebox\\": "components/orange-box/src/",
+            "ShawnSandy\\Syntaxcards\\": "components/shawnsandy/syntaxcards/src"
         }
     },
     "autoload-dev": {
@@ -62,8 +68,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-            ]
+            "dont-discover": []
         }
     },
     "scripts": {
