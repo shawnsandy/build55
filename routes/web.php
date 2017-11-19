@@ -61,3 +61,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Dashauth::routes();
+ Route::get('/settings', 'SettingsController@index')->name('settings');
