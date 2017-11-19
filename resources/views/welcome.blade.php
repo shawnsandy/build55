@@ -82,6 +82,11 @@
                     Laravel
                 </div>
 
+                <div class="div">
+                <p><img src="{{ Imgfly::imgFly('apple-mouse.jpeg?w=500') }}" alt="">
+                <p><img src="{{ Imgfly::imgPublic('hands.jpg?w=500', 'img') }}" alt=""></p>
+                </div>
+
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>

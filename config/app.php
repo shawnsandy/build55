@@ -160,6 +160,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+		ShawnSandy\ImgFly\ImgflyServiceProvider::class,
 		ShawnSandy\Syntaxcards\SyntaxcardsServiceProvider::class,
     ],
     /*
@@ -213,6 +214,7 @@ return [
         "Orangebox" => ShawnSandy\Orangebox\OrangeboxFacade::class,
         "Jarvis" => ShawnSandy\Jarvis\JarvisFacade::class,
         "Dashauth" => ShawnSandy\DashAuth\DashAuthFacade::class,
+        "Imgfly" => ShawnSandy\ImgFly\Classes\ImgflyFacade::class,
 
 ],
 

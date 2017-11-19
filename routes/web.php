@@ -61,4 +61,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Dashauth::routes();
- Route::get('/settings', 'SettingsController@index')->name('settings');
+
+Route::get('/settings', 'SettingsController@index')->name('settings');
+
+Imgfly::routes();
+
+Route::view("welcome", "welcome");
