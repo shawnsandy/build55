@@ -13,3 +13,4 @@ yarn-error.log
 /components
 .DS_Store
 !/components/applications/**/*
+/components
