@@ -1,7 +1,5 @@
 <?php
 
-
-
 /*
 -----------------------------------------------------------------
 | Web Routes
@@ -13,21 +11,14 @@
 |
 */
 
+use ShawnSandy\Backstory\App\Story;
+
 Route::get('/', function () {
 	 //dd(jarvis_views("index", "shawnsandy"));
 	return view(jarvis_views("index"), ["theme_class" => "front-page"]);
 }
 );
 
-Route::group(['prefix' => "extras"], function () {
-	Extras::routes();
-}
-);
-
-Route::group(["prefix" => "page"], function () {
-	Pages::routes();
-}
-);
 
 
 Route::group(['prefix' => config("jarvis.base_url")], function() {
@@ -66,4 +57,28 @@ Route::get('/settings', 'SettingsController@index')->name('settings');
 
 Imgfly::routes();
 
+Backstory::routes();
+
 Route::view("welcome", "welcome");
+
+Route::view("create-story", "backstory::create");
+
+Route::view("stories", "backstory::index");
+
+Route::view('roles', "dashauth::roles");
+
+Route::view('privileges', "dashauth::privileges");
+
+Route::get("story/{id}", function($id){
+
+	$story = Story::with(['author', 'categories'])->where("id", $id)->first();
+	return view("backstory::story", compact("story"));
+
+});
+
+Route::get("update-story/{id}", function($id) {
+
+	$model = Story::with(['author', 'categories'])->where("id", $id)->first();
+   	return  view("backstory::update", compact('model'));
+
+});

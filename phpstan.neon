@@ -1,0 +1,8 @@
+parameters:
+    excludes_analyse:
+        - %rootDir%/../../../vendor/**/*.php
+        - %rootDir%/../../../database/**/*.php
+        - %rootDir%/../../../storage/**/*.php
+        - %rootDir%/../../../tests/**/*.php
+    ignoreErrors:
+        - '#Using $this outside a class#'

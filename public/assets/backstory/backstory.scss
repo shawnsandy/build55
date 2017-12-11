@@ -1,0 +1,76 @@
+.backstory {
+    .control {
+        margin-bottom: 40px;
+        input,
+        select,
+        textarea {
+            border-radius: 1px;
+        }
+        .ck-editor__editable {
+            min-height: 300px;
+        }
+    }
+    .label {
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .button.is-rounded {
+        border-radius: 30%
+    }
+    textarea {
+        overflow: hidden;
+        &.content {
+            min-height: 300px;
+        }
+    }
+    .file-name {
+        color: lightgray;
+    }
+    .choices__list--multiple .choices__item {
+        background-color: gray;
+        border-color: gray;
+    }
+    .cke_editable {
+        color: grey;
+    }
+    .editor-bar {
+        padding: 10px;
+        border-top: 1px solid lightgray;
+        .button {
+            border-radius: 20px;
+            margin: 0 5px;
+        }
+    }
+    .modal-content {
+        width: 860px;
+
+
+    }
+    .story-images {
+        max-height: 600px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .modal-content {
+        margin: 0 auto;
+        max-height: calc(100vh - 100px);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .modal-card,
+    .modal-content {
+        margin: 0 auto;
+        max-height: calc(100vh - 200px);
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container.is-fluid.image-fields {
+        width: 100%;
+    }
+}

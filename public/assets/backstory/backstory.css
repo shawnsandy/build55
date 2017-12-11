@@ -1,0 +1,61 @@
+.backstory .control {
+  margin-bottom: 40px; }
+  .backstory .control input,
+  .backstory .control select,
+  .backstory .control textarea {
+    border-radius: 1px; }
+  .backstory .control .ck-editor__editable {
+    min-height: 300px; }
+
+.backstory .label {
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.backstory .button.is-rounded {
+  border-radius: 30%; }
+
+.backstory textarea {
+  overflow: hidden; }
+  .backstory textarea.content {
+    min-height: 300px; }
+
+.backstory .file-name {
+  color: lightgray; }
+
+.backstory .choices__list--multiple .choices__item {
+  background-color: gray;
+  border-color: gray; }
+
+.backstory .cke_editable {
+  color: grey; }
+
+.backstory .editor-bar {
+  padding: 10px;
+  border-top: 1px solid lightgray; }
+  .backstory .editor-bar .button {
+    border-radius: 20px;
+    margin: 0 5px; }
+
+.backstory .modal-content {
+  width: 860px; }
+
+.backstory .story-images {
+  max-height: 600px;
+  width: 100%;
+  overflow: hidden; }
+
+@media screen and (min-width: 769px) {
+  .modal-content {
+    margin: 0 auto;
+    max-height: calc(100vh - 100px); } }
+
+@media screen and (min-width: 769px) {
+  .modal-card,
+  .modal-content {
+    margin: 0 auto;
+    max-height: calc(100vh - 200px);
+    width: 75%; } }
+
+@media screen and (min-width: 1024px) {
+  .container.is-fluid.image-fields {
+    width: 100%; } }

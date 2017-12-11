@@ -3,18 +3,16 @@
 return [
 
 
-
-
-/*
--------------------------------------------------------------------------
-    | Application Name
-    |--------------------------------------------------------------------------
-    |
-    | This value is the name of your application. This value is used when the
-    | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
-    |
-    */
+    /*
+    -------------------------------------------------------------------------
+        | Application Name
+        |--------------------------------------------------------------------------
+        |
+        | This value is the name of your application. This value is used when the
+        | framework needs to place the application's name in a notification or
+        | any other location as required by the application or its packages.
+        |
+        */
     'name' => env('APP_NAME', 'Laravel'),
     /*
     |--------------------------------------------------------------------------
@@ -147,10 +145,13 @@ return [
         /*
          * Package Service Providers...
          */
-        ShawnSandy\Extras\ExtrasServicesProvider::class,
+//        ShawnSandy\Extras\ExtrasServicesProvider::class,
         ShawnSandy\Orangebox\OrangeboxThemesProvider::class,
         ShawnSandy\Jarvis\JarvisThemesProvider::class,
         ShawnSandy\DashAuth\DashAuthServicesProvider::class,
+        ShawnSandy\Backstory\BackstoryServicesProvider::class,
+        ShawnSandy\ImgFly\ImgflyServiceProvider::class,
+        ShawnSandy\Syntaxcards\SyntaxcardsServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -160,9 +161,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-		ShawnSandy\ImgFly\ImgflyServiceProvider::class,
-		ShawnSandy\Syntaxcards\SyntaxcardsServiceProvider::class,
     ],
+
     /*
     |--------------------------------------------------------------------------
     | Class Aliases
@@ -174,9 +174,9 @@ return [
     |
     */
 
-'aliases' => [
+    'aliases' => [
 
-'App' => Illuminate\Support\Facades\App::class,
+        'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
         'Blade' => Illuminate\Support\Facades\Blade::class,
@@ -209,16 +209,15 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Extras' => ShawnSandy\Extras\ExtrasFacade::class,
-        "Gmap" => ShawnSandy\Extras\Apps\Maps\MapsFacade::class,
         "Orangebox" => ShawnSandy\Orangebox\OrangeboxFacade::class,
         "Jarvis" => ShawnSandy\Jarvis\JarvisFacade::class,
         "Dashauth" => ShawnSandy\DashAuth\DashAuthFacade::class,
         "Imgfly" => ShawnSandy\ImgFly\Classes\ImgflyFacade::class,
+        "Backstory" => ShawnSandy\Backstory\BackstoryFacade::class,
 
-],
+    ],
 
-'debug_blacklist' => [
+    'debug_blacklist' => [
         '_ENV' => [
             'APP_KEY',
             'DB_PASSWORD',
