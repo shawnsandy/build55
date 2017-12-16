@@ -1,4 +1,4 @@
-Back<?php
+<?php
 
 return [
     "user_admins" => "admin",

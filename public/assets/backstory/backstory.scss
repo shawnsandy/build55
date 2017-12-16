@@ -14,8 +14,8 @@
         font-weight: normal;
         text-transform: uppercase;
     }
-    .button.is-rounded {
-        border-radius: 30%
+    .is-rounded {
+        border-radius: 30px;
     }
     textarea {
         overflow: hidden;
@@ -51,6 +51,10 @@
         width: 100%;
         overflow: hidden;
     }
+    img {
+        padding: 5px;
+        background-color: lightgray;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -73,4 +77,24 @@
     .container.is-fluid.image-fields {
         width: 100%;
     }
+}
+/**
+ * Form Validation Errors
+ */
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+.categories-list .button {
+
+    margin: 5px;
+
 }

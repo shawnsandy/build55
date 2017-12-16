@@ -45,7 +45,6 @@ Route::get("test", function()
 // Route::post("installs","\ShawnSandy\Jarvis\Controllers\InstallsController" );
 
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -61,24 +60,15 @@ Backstory::routes();
 
 Route::view("welcome", "welcome");
 
-Route::view("create-story", "backstory::create");
-
-Route::view("stories", "backstory::index");
 
 Route::view('roles', "dashauth::roles");
 
 Route::view('privileges', "dashauth::privileges");
 
-Route::get("story/{id}", function($id){
 
-	$story = Story::with(['author', 'categories'])->where("id", $id)->first();
-	return view("backstory::story", compact("story"));
 
-});
+Route::get('backfix', function(){
+	return "back fix";
 
-Route::get("update-story/{id}", function($id) {
-
-	$model = Story::with(['author', 'categories'])->where("id", $id)->first();
-   	return  view("backstory::update", compact('model'));
-
-});
+}
+);

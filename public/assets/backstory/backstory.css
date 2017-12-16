@@ -11,8 +11,8 @@
   font-weight: normal;
   text-transform: uppercase; }
 
-.backstory .button.is-rounded {
-  border-radius: 30%; }
+.backstory .is-rounded {
+  border-radius: 30px; }
 
 .backstory textarea {
   overflow: hidden; }
@@ -44,6 +44,10 @@
   width: 100%;
   overflow: hidden; }
 
+.backstory img {
+  padding: 5px;
+  background-color: lightgray; }
+
 @media screen and (min-width: 769px) {
   .modal-content {
     margin: 0 auto;
@@ -59,3 +63,18 @@
 @media screen and (min-width: 1024px) {
   .container.is-fluid.image-fields {
     width: 100%; } }
+
+/**
+ * Form Validation Errors
+ */
+.error {
+  border-color: red; }
+
+.error-message {
+  color: red;
+  font-style: italic;
+  margin-bottom: 1em;
+  padding: 5px; }
+
+.categories-list .button {
+  margin: 5px; }
